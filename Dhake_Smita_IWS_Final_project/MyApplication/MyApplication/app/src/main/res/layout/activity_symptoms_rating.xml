@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5D6DA"
+    tools:context=".SymptomsRatingActivity">
+
+    <TextView
+        android:id="@+id/textViewSysLogPage"
+        android:layout_width="365dp"
+        android:layout_height="37dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="System Logging "
+        android:textAlignment="center"
+        android:textColor="#652420"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <Spinner
+        android:id="@+id/spinnerSymptoms"
+        android:layout_width="260dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSysLogPage"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="86dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUploadSymptoms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSymptoms"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <Button
+        android:id="@+id/btnUploadSymptoms"
+        android:layout_width="151dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="152dp"
+        android:background="#31CA0E"
+        android:text="Upload Symptoms"
+        android:textColor="#23272b"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="#CDDC39"
+        android:textColorLink="#8BC34A"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

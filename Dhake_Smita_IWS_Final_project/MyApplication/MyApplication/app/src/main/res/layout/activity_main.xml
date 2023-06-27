@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5D6DA"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnHeartRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="52dp"
+        android:background="#652420"
+        android:text="Record Heart Rate"
+        android:textColor="#FFC107"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="#CDDC39"
+        android:textColorLink="#8BC34A"
+        app:layout_constraintBottom_toTopOf="@+id/btnRespiratoryRate"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHeartRate"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/textViewHeartRate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <TextView
+        android:id="@+id/textViewHeartRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Heart Rate"
+        android:textColor="#652020"
+        app:layout_constraintBottom_toTopOf="@+id/btnRespiratoryRate"
+        app:layout_constraintEnd_toEndOf="@+id/btnRespiratoryRate"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/btnRespiratoryRate"
+        app:layout_constraintTop_toBottomOf="@+id/btnHeartRate"
+        app:layout_constraintVertical_bias="0.345" />
+
+
+    <Button
+        android:id="@+id/btnRespiratoryRate"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="228dp"
+        android:background="#652420"
+        android:text="Record Respiratory Rate"
+        android:textColor="#FFC107"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="#CDDC39"
+        android:textColorLink="#8BC34A"
+        app:layout_constraintBottom_toTopOf="@+id/btnSymptoms"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRespRate"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="@+id/textViewRespRate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeartRate" />
+
+    <TextView
+        android:id="@+id/textViewRespRate"
+        android:layout_width="226dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="25dp"
+        android:text="Your Respiratory Rate "
+        android:textAlignment="center"
+        android:textColor="#652420"
+        app:layout_constraintBottom_toTopOf="@+id/btnUploadSigns"
+        app:layout_constraintEnd_toEndOf="@+id/btnUploadSigns"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/btnUploadSigns"
+        app:layout_constraintTop_toBottomOf="@+id/btnRespiratoryRate"
+        app:layout_constraintVertical_bias="0.59000003" />
+
+    <Button
+        android:id="@+id/btnUploadSigns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="22dp"
+        android:background="#31CA0E"
+        android:padding="30dp"
+        android:text="Upload Signs"
+        android:textColor="#23272b"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="#CDDC39"
+        android:textColorLink="#8BC34A"
+        app:layout_constraintBottom_toTopOf="@+id/btnSymptoms"
+        app:layout_constraintEnd_toEndOf="@+id/btnSymptoms"
+        app:layout_constraintStart_toStartOf="@+id/btnSymptoms"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRespRate" />
+
+    <Button
+        android:id="@+id/btnSymptoms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="100dp"
+        android:background="#652420"
+        android:padding="30dp"
+        android:text="Symptoms"
+        android:textColor="#FFC107"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="#CDDC39"
+        android:textColorLink="#8BC34A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUploadSigns" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
